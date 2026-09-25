@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.about{
+background:#fde8ec;
+height:500px;
+width:100%;
+padding:20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+background-image:url(./about.jpg);
+}
+
+
+
+.about h1{
+    font-size:55px;
+justify-content: center;
+    margin:top;
+}
+.about p{
+    font-size:22px;
+    margin-top:10px;
+}
+.main{display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    padding:50px 60px;
+    margin-top:20px;
+}
+.main h2{
+    font-size:44px;
+    margin-bottom:20px;
+    
+}
+.left p{
+    line-height:1.8;
+    font-size:25px;
+    color:#222;
+font-weight: bold;
+font-style: italic;
+margin-top: 100px;
+margin-bottom:50px;
+}
+.script{
+    font-family:cursive;
+    margin-top:30px;
+    text-align:center;
+    font-weight:normal;
+font-size:30px;
+}
+.item{
+    display:flex;
+    gap:15px;align-items:center;
+    margin-bottom:22px;
+font-style:italic;
+}
+.item img{
+    height:250px;
+    width:250px;
+    border-radius:25px;
+    border-style: double;
+    top:0;
+}
+.right{
+    margin-bottom:100px;
+}
+
+
+}
+
+/* Image base da */
+.right .item img {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 12px !important;
+  transition: all 0.35s ease !important;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+/* IMAGE AH CLICK / HOVER PANNA MATTUM EFFECT DA */
+.right .item img:hover {
+  transform: scale(1.15) rotate(3deg) !important;
+  box-shadow: 0 10px 20px rgba(255, 51, 102, 0.35) !important;
+  border-color: #ff3366 !important;
+}
+
+/* CLICK PANNA HOLD AAGANUM NA */
+.right .item img:active {
+  transform: scale(0.50) !important;
+}
+
+/* Click panna stay aagura effect ku - active class da */
+.right .item img.img-active {
+  transform: scale(1.2) !important;
+  box-shadow: 0 12px 25px rgba(255, 51, 102, 0.45) !important;
+  border-color: #ff3366 !important;
+}
+.item b{font-size:35px}
+.item p{color:#555;margin-top:3px}
+
+@media(max-width:800px){
+  .why-grid{grid-template-columns:1fr;}
+}
+
+
+
+
+
+
+
+/* KEELA CONTENT CSS DA MACHA */
+.bottom-box{
+  background:#fff8f0;
+  margin:40px 20px 20px 20px;
+  padding:30px;
+  border-radius:24px;
+  border:1.5px dashed #ffab8a;
+}
+
+.stats{
+  display:flex;
+  gap:20px;
+  justify-content:space-around;
+  text-align:center;
+  flex-wrap:wrap;
+  margin-top: 50px;
+}
+.stat-card{
+  animation: popIn 0.6s ease infinite;
+  transition:0.3s;
+}
+
+.stats h2{
+  color:#ff3366;
+  font-size:35px;
+}
+
+.stats p{
+  font-size:25px;
+  color:#666;
+  margin-top:4px;
+}
+
+.center-box{
+  text-align:center;
+  margin-top:50px;
+}
+
+.center-box h2{
+  font-size:40px;
+  color:#222;
+  margin-top:60px;
+}
+
+.center-box p{
+  color:#777;
+  font-size:50px;
+  margin-top:10px;
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.6;
+  width: 500px;
+  height:200px;
+}
+
+.center-box button{
+  margin-top:25px;
+  padding:12px 32px;
+  background:#ff3366;
+  color:#fff;
+  border:none;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 8px 18px rgba(255,51,102,0.3);
+  transition:0.2s;
+}
+
+.center-box button:hover{
+  background:#e62958;
+  transform:translateY(-2px);
+}
+
+.foot{
+  text-align:center;
+  padding:22px;
+  background:#111;
+  color:#888;
+  border-radius:18px;
+  margin:0 20px 20px 20px;
+  font-size:13px;
+}
+
+/* MOBILE DA */
+@media(max-width:600px){
+  .bottom-box{
+    margin:20px 10px;
+    padding:20px 15px;
+  }
+  .stats h2{
+    font-size:26px;
+  }
+  .center-box h2{
+    font-size:58px;
+  }
+  .center-box button{
+    width:100%;
+  }
+}
+.bottom-box{
+  background:#fff8f0;
+  margin:40px 20px;
+  padding:35px;
+  border-radius:24px;
+  border:1.5px dashed #ffab8a;
+  animation: fadeUp 0.8s ease;
+  width:1200px;
+  margin-left:200px;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.stat-card{
+  animation: popIn 0.6s ease infinite;
+  transition:0.3s;
+}
+
+.stat-card:nth-child(1){ animation-delay:0.2s; }
+.stat-card:nth-child(2){ animation-delay:0.4s; }
+.stat-card:nth-child(3){ animation-delay:0.6s; }
+
+.stat-card:hover{
+  transform:translateY(-8px) scale(1.05);
+}
+
+.stat-card h2{
+  color:#ff3366;
+  font-size:36px;
+  animation: pulse 2s infinite;
+}
+
+.stat-card p{
+  font-size:14px;
+  color:#666;
+}
+
+.center-box{
+  text-align:center;
+  margin-top:40px;
+  animation: fadeUp 1s ease 0.8s infinite;
+}
+
+.float-text{
+  font-size:23px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.center-box p{
+  color:#777;
+  font-size:25px;
+  margin-top:10px;
+}
+
+.explore-btn{
+  margin-top:10px;
+  padding:13px 35px;
+  background:linear-gradient(45deg,#ff3366,#ff6a5b);
+  color:#fff;
+  border:none;
+  border-radius:30px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(255,51,102,0.4);
+  transition:0.3s;
+  animation: glow 2s infinite ;
+}
+
+.explore-btn:hover{
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 15px 35px rgba(255,51,102,0.6);
+}
+
+.explore-btn:active{
+  transform:scale(0.95);
+}
+
+.foot{
+  text-align:center;
+  padding:25px;
+  background:mediumslateblue;
+  color:whitesmoke;
+  border-radius:14px;
+  margin:0 20px 20px 20px;
+  font-size:23px;
+  animation: fadeUp 1s ease 1.2s infinite;
+  height:100px;
+}
+
+/* KEYFRAMES DA MACHA */
+@keyframes fadeUp{
+  from{ opacity:0; transform:translateY(40px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
+@keyframes popIn{
+  from{ opacity:0; transform:scale(0.5) translateY(20px); }
+  to{ opacity:1; transform:scale(1) translateY(0); }
+}
+
+@keyframes pulse{
+  0%,100%{ transform:scale(1); }
+  50%{ transform:scale(1.08); }
+}
+
+@keyframes float{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+}
+
+@keyframes glow{
+  from{ box-shadow:0 10px 25px rgba(255,51,102,0.4); }
+  to{ box-shadow:0 10px 35px rgba(255,51,102,0.7), 0 0 15px rgba(255,51,102,0.3); }
+}
+
+/* MOBILE DA */
+@media(max-width:600px){
+  .bottom-box{ margin:20px 10px; padding:22px 15px; }
+  .stat-card h2{ font-size:28px; }
+  .explore-btn{ width:100%; }
+}
